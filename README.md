@@ -1,6 +1,6 @@
 # TIVIT Frontend MVP
 
-This project is a **Frontend MVP built with Next.js** that demonstrates a secure authentication flow using **JWT tokens**, **role-based access control**, and **protected routes**.
+This project is a **Frontend MVP built with Next.js** that demonstrates a  using **JWT tokens**, **role-based access control**, and **protected routes**.
 
 The application authenticates users through an API and grants access to different sections based on the user's role (`user` or `admin`).
 
@@ -9,7 +9,7 @@ The application authenticates users through an API and grants access to differen
 You can access the running application here:
 
 **Live Demo:**
-[Tivit MVP]()
+[Tivit MVP](https://tivit-mvp.vercel.app/)
 
 ---
 
@@ -299,7 +299,7 @@ The project can also be run using Docker.
 Build image:
 
 ```
-docker-compose --build .
+docker-compose --build
 ```
 
 Run container:
