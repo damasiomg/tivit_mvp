@@ -1,0 +1,83 @@
+@import '../../styles/variables';
+
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: $spacing-md;
+  background: linear-gradient(135deg, $color-bg-primary 0%, $color-bg-secondary 100%);
+
+  &__container {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  &__card {
+    text-align: center;
+  }
+
+  &__logo {
+    margin-bottom: $spacing-lg;
+  }
+
+  &__subtitle {
+    font-size: 0.875rem;
+    color: $color-text-secondary;
+    margin-bottom: $spacing-xl;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  &__submit {
+    margin-top: $spacing-sm;
+  }
+
+  &__status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-sm;
+    font-size: 0.8rem;
+    color: $color-text-muted;
+    margin-top: $spacing-md;
+
+    &-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $color-success;
+
+      &--offline {
+        background-color: $color-error;
+      }
+    }
+  }
+
+  &__unavailable {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-md;
+
+    &-icon {
+      font-size: 3rem;
+    }
+
+    &-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: $color-text-primary;
+    }
+
+    &-text {
+      color: $color-text-secondary;
+      font-size: 0.875rem;
+    }
+  }
+}

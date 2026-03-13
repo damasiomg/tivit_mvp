@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacing-sm;
+  padding: 12px $spacing-md;
+  border-radius: $radius-md;
+  font-size: 0.875rem;
+  font-weight: 500;
+  animation: slideIn 0.3s ease;
+  margin-bottom: 15px;
+
+  &--error {
+    background-color: rgba($color-error, 0.08);
+    color: $color-error;
+  }
+
+  &--success {
+    background-color: rgba($color-success, 0.08);
+    color: $color-success;
+  }
+
+  &--warning {
+    background-color: rgba($color-warning, 0.1);
+    color: darken($color-warning, 20%);
+  }
+
+  &--info {
+    background-color: rgba($color-info, 0.08);
+    color: $color-info;
+  }
+
+  &__close {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: inherit;
+    opacity: 0.7;
+    line-height: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
